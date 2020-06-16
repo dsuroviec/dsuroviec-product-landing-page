@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <script src="https://kit.fontawesome.com/e814d3997d.js" crossorigin="anonymous"></script>
+      <style>
+      
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  background-color:#FFF8DC;
+}
+
+#container{
+  width: 80%;
+  margin:0 auto;
+}
+
+header{
+  background-color:#55d6aa;
+  position:fixed;
+  width:100%;
+}
+
+header::after{
+  content:'';
+  display:table;
+  clear:both;
+}
+
+#header-img{
+  border: 3px solid #444;
+  border-radius: 4px;
+  padding: 5px;
+  float:left;
+  width: 150px;
+  height: 50px;
+  margin:7px 100px;
+}
+nav{
+  float:right;
+  margin-right:80px;
+}
+
+nav ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+  background-color:#55d6aa;
+}
+nav li{
+  display:inline-block;
+  margin-left:30px;  
+  padding-top:25px;
+  position:relative;
+  background-color:#55d6aa;
+}
+
+a{
+  text-decoration:none;
+  color: #444;
+  text-transform:uppercase;
+  font-size:14px;
+  background-color:#55d6aa;
+  padding-right:
+}
+nav a:hover{
+  color:#000;
+}
+
+nav a::before{
+  content:'';
+  display:block;
+  height:5px;
+  background-color:#444;
+  position:absolute;
+  top:0;
+  width:0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+  width:100%;
+}
+
+.main{
+  text-align:center;
+}
+
+main h1{
+  padding-top:120px;
+}
+
+label{
+  display:block;
+  margin-bottom:20px;
+  font-weight:900;
+  font-size:20px;
+}
+
+form{
+  margin-top:50px;
+}
+
+input{
+  width:200px;
+  background-color:#fff;
+  font-weight:600;
+  height:25px;
+  text-align:center;
+}
+
+#submit{
+  background-color:#55d6aa;
+  height:40px;
+  min-width:10%;
+  font-weight:800;
+  margin-left:20px;
+  border-radius:10px;
+}
+
+#features{
+  display:block;
+  text-align:left;
+  line-height:30px;
+  margin-top:90px;
+}
+
+.featureBox{
+  display:flex;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  width: 100px;
+  color: black;
+}
+
+.desc {
+  padding: 5px;
+  margin-left:60px;
+  width:960px;
+  margin-bottom:30px;
+}
+
+#video{
+  width:50%;
+  height:400px;
+  margin-top:100px;
+}
+
+#pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+}
+
+.donorOptions {
+  width:33.3%;
+  margin:10px;
+  border: 3px solid #111;
+  border-radius: 3px;
+}
+
+.donorOptions h1{
+  margin-top:0;
+  padding-top:5px;
+  background-color:#8999;
+  border-bottom-style:solid;
+}
+
+.donorOptions h2{
+  margin-top:20px;
+}
+
+ul{
+  list-style:none;
+  line-height:1.6em;
+  margin:10px;
+}
+
+.btn{
+  margin-bottom:10px;
+  margin-top: 20px;
+  height: 30px;
+  width: 100px;
+  border-radius:5px;
+  font-weight:800;
+  background-color:#55d6aa;
+  
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+      </style>
+    </head>
+      <body>  
+        <header id="header"> 
+          <img id="header-img" class="logo" src="https://image.shutterstock.com/image-vector/bible-church-logo-name-mission-260nw-342379844.jpg"/>
+          <nav id="nav-bar">
+            <ul>
+              <li ><a href="#pricing"class="nav-link">Pricing</a>                   </li>
+              <li ><a href="#features"class="nav-link">Features</a>               </li>
+              <li ><a href="#video"class="nav-link">How It Works</a>               </li>
+            </ul>
+          </nav>                    
+        </header>
+        <div id="container">
+          <main class="main"> 
+            <h1>You purchase, We Deliver And Report</h1>
+            
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+              <label>Interested in spreading the Good Word?!</label>
+              <input
+                id="email" 
+                name="email"
+                type="email" 
+                required 
+                placeholder="Please Submit Your Email"
+              >
+              <input 
+                id="submit" 
+                type="submit" 
+                value="Get Started"
+                class="submit button"
+              >
+            </form>
+            <div id="features">
+               <div class="featureBox">
+                 <div class="icon">
+                   <i class="fas fa-bible fa-5x"></i>
+                 </div>
+                 <div class="desc">
+                   <h2>You Purchase</h2>
+                   <p> We are a philanthropic non-profit that utilizes donations to get the written word of God to parts of the world where access to smart phones, bibles, and christian resources are limited
+                   </p>
+                 </div>
+                </div>
+              <div class="featureBox">
+                 <div class="icon">
+                   <i class="fas fa-dolly fa-5x"></i>
+                 </div>
+                 <div class="desc">
+                  <h2>We Deliver</h2>
+                  <p> We manage the channels to get the bibles to places that will make the greatest impact. Your purchased bibles have a chip for tracking your bibles.
+                  </p>
+                 </div>
+              </div>
+               <div class="featureBox">
+                 <div class="icon">
+                   <i class="fas fa-check fa-5x"></i>
+                 </div>
+                 <div class="desc">
+                   <h2>We Report</h2>
+               <p> We report back to you the recipients and the missionaries overseeing the distribution with video. You will get the opportunity to connect with your recipients via our online video and written communications system
+                 </div>
+              </div>
+            </div>
+            <section id="HowItWorks">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/RROedScxvIs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            </section>
+             <section id="pricing">
+      <div class="donorOptions">
+        <h1>10 Bibles</h1>
+        <h2>$30</h2>
+        <ul>
+          <li>Most Affordable</li>
+          <li>Limited Impact</li>
+          <li>No Bible Tracking</li>
+        </ul>
+        <button class="btn">Select</button>
+      </div>
+      <div class="donorOptions">
+        <h1>50 Bibles</h1>
+        <h2>$100</h2>
+        <ul>
+          <li>Most Popular option</li>
+          <li>Bible Tracking</li>
+          <li>Receive Pictures of recipients</li>
+        </ul>
+        <button class="btn">Select</button>
+      </div>
+      <div class="donorOptions">
+        <h1>100 Bibles</h1>
+        <h2>$150</h2>
+        <ul>
+          <li>Superstar package</li>
+          <li>Video and photos of recipients</li>
+          <li>Communication with donee and missionary</li>
+        </ul>
+        <button class="btn">Select</button>
+      </div>
+    </section>
+          </main>
+      </body>
+    </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+  </script>
+</html> 
+ 
+
+
